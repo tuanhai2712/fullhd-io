@@ -1,0 +1,27 @@
+html,
+body {
+  display: block;
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  background-color: #14183d !important;
+}
+
+body {
+  color: var(--primary-text-color);
+  font-family: 'Circular Std' !important; //temporary use !important to override font-family in bootstrap, will be updated
+  font-weight: normal;
+}
+
+.background-none > .modal-content {
+  background: none !important;
+}

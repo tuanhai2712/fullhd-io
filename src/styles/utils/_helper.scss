@@ -1,0 +1,23 @@
+.bg-primary-color {
+  background-color: var(--primary-color);
+  border          : 1px solid var(--primary-color);
+
+  &:hover {
+    background-color: var(--primary-color);
+    border          : 1px solid var(--primary-color);
+  }
+}
+
+// Switches
+.custom-switch.custom-switch-sm {
+  @include switch();
+}
+.custom-switch.custom-switch-md {
+  @include switch('md');
+}
+.custom-switch.custom-switch-lg {
+  @include switch('lg');
+}
+.custom-switch.custom-switch-xl {
+  @include switch('xl');
+}

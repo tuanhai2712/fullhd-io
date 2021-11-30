@@ -1,0 +1,31 @@
+:root {
+  // Colors
+  --primary-color  : #f7614e;
+  --secondary-color: #0e162d;
+  --accent-color   : #202943;
+
+  --positive-color: #37912A;
+  --negative-color: #C10015;
+  --info-color    : #31CCEC;
+  --warning-color : #F2C037;
+
+  --background-color          : #13183d;
+  --secondary-background-color: rgba(33,44,61,1);
+  --third-background-color    : #0b1135;
+  --text-color                : #fff;
+  --primary-text-color        : #92abcf;
+  --secondary-text-color      : #11ece5;
+  --accent-text-color         : #c6d3e7;
+
+  // Sizes
+  --mobileS-size: 320px;
+  --mobileM-size: 375px;
+  --mobileL-size: 425px;
+  --tablet-size : 768px;
+  --laptop-size : 1024px;
+  --laptopL-size: 1440px;
+  --desktop-size: 2560px;
+
+  --main-header-height     : 64px;
+  --main-left-sidebar-width: 100px;
+}

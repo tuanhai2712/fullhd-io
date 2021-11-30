@@ -1,0 +1,269 @@
+import { keyMirror } from '@utils/utils';
+
+export const ActionTypes = keyMirror({
+  // user login
+  LOGIN_REQUEST: undefined,
+  LOGIN_SUCCESS: undefined,
+  LOGIN_FAILURE: undefined,
+
+  LOGIN_WITH_TFA: undefined,
+  OPEN_LOGIN_WITH_TFA: undefined,
+
+  UPDATE_USER_INFOR: undefined,
+  UPDATE_USER_DEMO_INFOR: undefined,
+
+  // user logout
+  LOGOUT: undefined,
+  // forgot password
+
+  RESET_PASSWORD_REQUEST: undefined,
+  RESET_PASSWORD_SUCCESS: undefined,
+  RESET_PASSWORD_FAILURE: undefined,
+
+  LOGIN_EMAIL_REQUEST: undefined,
+  LOGIN_EMAIL_SUCCESS: undefined,
+  LOGIN_EMAIL_FAILURE: undefined,
+
+  GET_EMAIL_TOKEN_REQUEST: undefined,
+  GET_EMAIL_TOKEN_SUCCESS: undefined,
+  GET_EMAIL_TOKEN_FAILURE: undefined,
+
+  OPEN_LOGIN_WITH_EMAIL: undefined,
+
+  CONFIRM_RESET_PASSWORD_REQUEST: undefined,
+  CONFIRM_RESET_PASSWORD_SUCCESS: undefined,
+  CONFIRM_RESET_PASSWORD_FAILURE: undefined,
+
+  // change password
+  CHANGE_PASSWORD_REQUEST: undefined,
+  CHANGE_PASSWORD_SUCCESS: undefined,
+  CHANGE_PASSWORD_FAILURE: undefined,
+
+  UPDATE_USER_PROFILE_REQUEST: undefined,
+  UPDATE_USER_PROFILE_SUCCESS: undefined,
+  UPDATE_USER_PROFILE_FAILURE: undefined,
+
+  CLEAR_TFA_DATA: undefined,
+  ENABLE_TFA_REQUEST: undefined,
+  ENABLE_TFA_SUCCESS: undefined,
+  ENABLE_TFA_FAILURE: undefined,
+
+  DISABLE_TFA_REQUEST: undefined,
+  DISABLE_TFA_SUCCESS: undefined,
+  DISABLE_TFA_FAILURE: undefined,
+
+  CONFIRM_VERIFY_CODE_REQUEST: undefined,
+  CONFIRM_VERIFY_CODE_SUCCESS: undefined,
+  CONFIRM_VERIFY_CODE_FAILURE: undefined,
+
+  // Register Page
+  USER_REGISTER_REQUEST: undefined,
+  USER_REGISTER_SUCCESS: undefined,
+  USER_REGISTER_FAILURE: undefined,
+  CONFIRM_REGISTRATION_REQUEST: undefined,
+  CONFIRM_REGISTRATION_SUCCESS: undefined,
+  CONFIRM_REGISTRATION_FAILURE: undefined,
+
+  I18N_SET_LANGUAGE: undefined,
+  I18N_SET_LANGUAGE_SUCCESS: undefined,
+
+  // Trading Charts Page
+  TRADING_GET: undefined,
+  TRADING_GET_SUCCESS: undefined,
+  TRADING_GET_FAILURE: undefined,
+
+  // Toggle sidebar
+  SHOW_TOGGLE_SIDEBAR: undefined,
+  HIDE_TOGGLE_SIDEBAR: undefined,
+
+  // Trading histories
+  TRADING_GET_HISTORIES: undefined,
+  TRADING_GET_HISTORIES_SUCCESS: undefined,
+  TRADING_GET_HISTORIES_FAILURE: undefined,
+  TRADING_RESET_STATE: undefined,
+
+  // Trading ranking systems
+  TRADING_GET_RANKING_SYSTEMS: undefined,
+  TRADING_GET_RANKING_SYSTEMS_SUCCESS: undefined,
+  TRADING_GET_RANKING_SYSTEMS_FAILURE: undefined,
+
+  // Buy Coins
+  BUY_COINS: undefined,
+  BUY_COINS_SUCCESS: undefined,
+  BUY_COINS_FAILURE: undefined,
+
+  // Sell Coins
+  SELL_COINS: undefined,
+  SELL_COINS_SUCCESS: undefined,
+  SELL_COINS_FAILURE: undefined,
+
+  // Commission
+  GET_COMMISSION_STATISTIC_REQUEST: undefined,
+  GET_COMMISSION_STATISTIC_SUCCESS: undefined,
+  GET_COMMISSION_STATISTIC_FAILURE: undefined,
+
+  WITHDRAWAL_REF_PROFIT_REQUEST: undefined,
+  WITHDRAWAL_REF_PROFIT_SUCCESS: undefined,
+  WITHDRAWAL_REF_PROFIT_FAILURE: undefined,
+
+  WITHDRAWAL_IB_PROFIT_REQUEST: undefined,
+  WITHDRAWAL_IB_PROFIT_SUCCESS: undefined,
+  WITHDRAWAL_IB_PROFIT_FAILURE: undefined,
+
+  GET_COMMISSION_DETAIL_REQUEST: undefined,
+  GET_COMMISSION_DETAIL_SUCCESS: undefined,
+  GET_COMMISSION_DETAIL_FAILURE: undefined,
+
+  GET_COMMISSION_FAILURE: undefined,
+  ADD_TRANSACTION_TRADE_HISTORY: undefined,
+  DELETE_TRANSACTION_TRADE_HISTORY: undefined,
+
+  GET_COMMISSION_VOLUME_REQUEST: undefined,
+  GET_COMMISSION_VOLUME_SUCCESS: undefined,
+  GET_COMMISSION_VOLUME_FAILURE: undefined,
+
+  GET_COMMISSION_IB_REQUEST: undefined,
+  GET_COMMISSION_IB_SUCCESS: undefined,
+  GET_COMMISSION_IB_FAILURE: undefined,
+
+  GET_MEMBER_LIST_REQUEST: undefined,
+  GET_MEMBER_LIST_SUCCESS: undefined,
+  GET_MEMBER_LIST_FAILURE: undefined,
+
+  // Matrix
+  GET_ALL_PACKAGE: undefined,
+  GET_MATRIX_LIST: undefined,
+  SET_CURRENT_PACKAGE: undefined,
+  GET_MATRIX_INFORMATION_OF_USER: undefined,
+  UPGRADE_PACKAGE: undefined,
+  SET_AUTO_UPGRADE: undefined,
+
+  GET_MATRIX_DRAW: undefined,
+  GET_MATRIX_DRAW_SUCCESS: undefined,
+  GET_MATRIX_DRAW_FAILURE: undefined,
+
+  WITHDRAWAL_MATRIX_REQUEST: undefined,
+  WITHDRAWAL_MATRIX_SUCCESS: undefined,
+  WITHDRAWAL_MATRIX_FAILURE: undefined,
+
+  GET_MATRIX_LIST_SUCCESS: undefined,
+  SET_CURRENT_PACKAGE_SUCCESS: undefined,
+  GET_ALL_PACKAGE_SUCCESS: undefined,
+  GET_MATRIX_INFORMATION_OF_USER_SUCCESS: undefined,
+  UPGRADE_PACKAGE_SUCCESS: undefined,
+  SET_AUTO_UPGRADE_SUCCESS: undefined,
+
+  GET_MATRIX_LIST_FAILURE: undefined,
+  GET_ALL_PACKAGE_FAILURE: undefined,
+  GET_MATRIX_INFORMATION_OF_USER_FAILURE: undefined,
+  UPGRADE_PACKAGE_FAILURE: undefined,
+  SET_AUTO_UPGRADE_FAILURE: undefined,
+
+  // Wallet
+  WALLET_GET: undefined,
+  WALLET_GET_SUCCESS: undefined,
+  WALLET_GET_FAILURE: undefined,
+
+  WALLET_DETAIL_GET: undefined,
+  WALLET_DETAIL_GET_SUCCESS: undefined,
+  WALLET_DETAIL_GET_FAILURE: undefined,
+  WITHDRAW_MONEY: undefined,
+  WITHDRAW_MONEY_SUCCESS: undefined,
+  WITHDRAW_MONEY_FAILURE: undefined,
+  TRANSFER_MONEY: undefined,
+  TRANSFER_MONEY_SUCCESS: undefined,
+  TRANSFER_MONEY_FAILURE: undefined,
+
+  //AI Robot
+
+  GET_AI_BOT_REQUEST: undefined,
+  GET_AI_BOT_SUCCESS: undefined,
+  GET_AI_BOT_FALURE: undefined,
+
+  GET_CONFIG_RATES_REQUEST: undefined,
+  GET_CONFIG_RATES_SUCCESS: undefined,
+  GET_CONFIG_RATES_FAILURE: undefined,
+
+  GET_TOTAL_COMMISSION_AI_SUCCESS: undefined,
+  GET_TOTAL_COMMISSION_AI_FAILURE: undefined,
+
+  REFUND_INVESTMENT_REQUEST: undefined,
+  REFUND_INVESTMENT_SUCCESS: undefined,
+  REFUND_INVESTMENT_FAILURE: undefined,
+
+  WITHDRAWAL_INVESTMENT_PROFIT_REQUEST: undefined,
+  WITHDRAWAL_INVESTMENT_PROFIT_SUCCESS: undefined,
+  WITHDRAWAL_INVESTMENT_PROFIT_FAILURE: undefined,
+
+  WITHDRAWAL_AI_COMMISSION_REQUEST: undefined,
+  WITHDRAWAL_AI_COMMISSION_SUCCESS: undefined,
+  WITHDRAWAL_AI_COMMISSION_FAILURE: undefined,
+
+  GET_AI_COMMISSION_REQUEST: undefined,
+  GET_AI_COMMISSION_SUCCESS: undefined,
+  GET_AI_COMMISSION_FAILURE: undefined,
+
+  GET_AI_HISTORIES_REQUEST: undefined,
+  GET_AI_HISTORIES_SUCCESS: undefined,
+  GET_AI_HISTORIES_FAILURE: undefined,
+
+  BUY_AI_ROBOT_REQUEST: undefined,
+  BUY_AI_ROBOT_SUCCESS: undefined,
+  BUY_AI_ROBOT_FAILURE: undefined,
+
+  GET_AI_HISTORY: undefined,
+  GET_AI_HISTORY_SUCCESS: undefined,
+  GET_AI_HISTORY_FAILURE: undefined,
+
+  ADD_INVESTMENT_REQUEST: undefined,
+  ADD_INVESTMENT_SUCCESS: undefined,
+  ADD_INVESTMENT_FAILURE: undefined,
+
+  AUTO_REFRESH_AI_BOT: undefined,
+  AUTO_REFRESH_AI_BOT_SUCCESS: undefined,
+  AUTO_REFRESH_AI_BOT_FAILURE: undefined,
+
+  // SERVER_ERROR
+  CLOSE_TOAST_SERVER_ERROR: undefined,
+
+  // CLEAR_FETCHING
+  CLEAR_FETCHING: undefined,
+  // REQUEST_SUCCESS
+  CLOSE_ALERT_REQUEST_SUCCESS: undefined,
+
+  //Account Switch
+  SWITCH_ACCOUNT_REQUEST: undefined,
+  SWITCH_ACCOUNT_SUCCESS: undefined,
+  SWITCH_ACCOUNT_FAILURE: undefined,
+
+  // Buy
+  BUY_IB_REQUEST: undefined,
+  BUY_IB_SUCCESS: undefined,
+  BUY_IB_FAILURE: undefined,
+
+  //Add demo money:
+  ADD_DEMO_MONEY: undefined,
+  ADD_DEMO_MONEY_SUCCESS: undefined,
+  ADD_DEMO_MONEY_FAILURE: undefined,
+
+  //show modal error when is demo account
+  SHOW_ERROR_DEMO: undefined,
+
+  RESPONSE_FAILURE: undefined,
+
+  // Profile
+  GET_USER_PROFILE_REQUEST: undefined,
+  GET_USER_PROFILE_SUCCESS: undefined,
+  GET_USER_PROFILE_FAILURE: undefined,
+
+  //Bonus Money:
+  GET_BONUS_STATUS_REQUEST: undefined,
+  GET_BONUS_STATUS_SUCCESS: undefined,
+  GET_BONUS_STATUS_FAILURE: undefined,
+
+  UPDATE_BONUS_FLAG_REQUEST: undefined,
+  UPDATE_BONUS_FLAG_SUCCESS: undefined,
+  UPDATE_BONUS_FLAG_FAILURE: undefined
+});
+
+export default {};

@@ -1,0 +1,61 @@
+/** Mobile */
+
+@media only screen and (min-width: 360px) {
+  .navbar .navbar-brand{
+    padding: 0.1em 0;
+  }
+
+  .navbar-dark .navbar-brand .icon {
+    font-size: 2em;
+  }
+}
+
+/** iPad */
+
+/* Orientation : Landscape */
+
+@media only screen and (orientation: landscape) and (-webkit-min-pixel-ratio: 1) and (min-width: 768px) {
+  .navbar .navbar-brand{
+    padding: 0.5em 0 !important;
+  }
+
+  .navbar-dark .navbar-brand .icon {
+    font-size: 2em;
+  }
+}
+
+/* Orientation : Portrait */
+
+@media only screen and (orientation: portrait) and (-webkit-min-pixel-ratio: 1) and (min-width: 768px) {
+  .navbar .navbar-brand{
+    padding: 1em 0 !important;
+  }
+
+  .navbar-dark .navbar-brand .icon {
+    font-size: 2em;
+  }
+}
+
+/** Laptop */
+
+@media only screen and (min-width: 768px) {
+  .navbar .navbar-brand{
+    padding: 0.75em 0 !important;
+  }
+
+  .navbar-dark .navbar-brand .icon {
+    font-size: 2em;
+  }
+}
+
+/** Desktop */
+
+@media only screen and (min-width: 1370px) {
+  .navbar .navbar-brand{
+    padding: 0.5em 0 !important;
+  }
+
+  .navbar-dark .navbar-brand .icon {
+    font-size: 2.8em;
+  }
+}
